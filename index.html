@@ -466,7 +466,7 @@ section{padding:70px 0}
 </style>
 </head>
 <body>
-<div class="trial-badge" id="trialBadge">PRUEBA GRATUITA · 72 HORAS</div>
+<div class="trial-badge" id="trialBadge" style="display:none!important">PRUEBA GRATUITA · 72 HORAS</div>
 <div class="trial-overlay" id="trialOverlay" aria-hidden="true">
   <div class="trial-card">
     <div class="trial-icon">🫧</div>
@@ -577,9 +577,12 @@ section{padding:70px 0}
     </div>
 
     <div class="trust-grid">
-      <article class="trust-card"><strong>🏠 A DOMICILIO</strong><p>No necesitas trasladar muebles o colchones para consultar el servicio.</p></article>
-      <article class="trust-card"><strong>🧼 LAVADO + DESINFECCIÓN</strong><p>Servicio orientado a mejorar la limpieza e higiene del tapizado.</p></article>
-      <article class="trust-card"><strong>📆 AMPLIA DISPONIBILIDAD</strong><p>Atención anunciada de lunes a domingo y feriados. Confirma horario por WhatsApp.</p></article>
+      <article class="trust-card"><strong>🏠 A DOMICILIO</strong><p>La atención se realiza en tu domicilio, evitando que tengas que trasladar muebles, colchones o sillas.</p></article>
+      <article class="trust-card"><strong>🧼 LAVADO + DESINFECCIÓN</strong><p>Una limpieza orientada a retirar suciedad acumulada y mejorar la higiene y apariencia de tus tapizados.</p></article>
+      <article class="trust-card"><strong>📆 AMPLIA DISPONIBILIDAD</strong><p>Atención anunciada de lunes a domingo y feriados. Consulta por WhatsApp el horario disponible para ti.</p></article>
+      <article class="trust-card"><strong>💬 ATENCIÓN DIRECTA</strong><p>Consulta tu caso directamente por WhatsApp y envía fotos para explicar fácilmente qué necesitas limpiar.</p></article>
+      <article class="trust-card"><strong>💰 COTIZA ANTES DE DECIDIR</strong><p>Puedes solicitar información y consultar el servicio antes de coordinar, para elegir según lo que necesites.</p></article>
+      <article class="trust-card"><strong>✨ RESULTADOS VISIBLES</strong><p>Revisa ejemplos de trabajos de limpieza y comparativas de antes y después para conocer mejor el tipo de servicio.</p></article>
     </div>
   </div>
 </section>
@@ -595,6 +598,9 @@ section{padding:70px 0}
         <span>📱 917 242 607</span>
         <span>🏠 SERVICIO A DOMICILIO</span>
         <span>💳 YAPE · PLIN · EFECTIVO</span>
+        <span>📸 PUEDES ENVIAR FOTOS</span>
+        <span>🛋️ MUEBLES · COLCHONES · SILLAS</span>
+        <span>📅 ATENCIÓN TODOS LOS DÍAS</span>
       </div>
 
       <a class="btn btn-wa wa-link" href="#">🟢 CONSULTAR POR WHATSAPP</a>
@@ -606,10 +612,10 @@ section{padding:70px 0}
   <div class="wrap">
     <div class="section-head"><h2>PREGUNTAS FRECUENTES</h2></div>
     <div class="faq">
-      <details><summary>¿QUÉ ARTÍCULOS LIMPIAN?</summary><p>Muebles, colchones, sillas, alfombras y más. Consulta tu caso por WhatsApp.</p></details>
-      <details><summary>¿EL SERVICIO ES A DOMICILIO?</summary><p>Sí. El servicio se ofrece a domicilio.</p></details>
-      <details><summary>¿QUÉ DÍAS ATIENDEN?</summary><p>Se anuncia atención de lunes a domingo y feriados. La disponibilidad se coordina por WhatsApp.</p></details>
-      <details><summary>¿QUÉ MEDIOS DE PAGO ACEPTAN?</summary><p>Según la información publicada: Yape, Plin y efectivo.</p></details>
+      <details><summary>¿QUÉ ARTÍCULOS LIMPIAN?</summary><p>Se ofrece limpieza y desinfección de muebles, colchones, sillas, alfombras y otros artículos similares. Si tienes un tapizado o artículo diferente, puedes enviar una foto por WhatsApp para consultar si puede atenderse.</p></details>
+      <details><summary>¿EL SERVICIO ES A DOMICILIO?</summary><p>Sí. El servicio se ofrece a domicilio, por lo que no necesitas trasladar tus muebles o colchones. Puedes escribir por WhatsApp para consultar la atención y coordinar según tu ubicación.</p></details>
+      <details><summary>¿QUÉ DÍAS ATIENDEN?</summary><p>Se anuncia atención de lunes a domingo y también feriados. Como los horarios pueden variar según los servicios ya programados, lo recomendable es consultar por WhatsApp la disponibilidad para el día que necesitas.</p></details>
+      <details><summary>¿QUÉ MEDIOS DE PAGO ACEPTAN?</summary><p>Según la información publicada, se aceptan Yape, Plin y efectivo. Si necesitas confirmar el medio de pago antes de coordinar el servicio, puedes hacerlo directamente por WhatsApp.</p></details>
     </div>
   </div>
 </section>
@@ -667,7 +673,7 @@ function revisarPrueba(){
   } else {
     overlay.classList.remove("is-visible");
     overlay.setAttribute("aria-hidden","true");
-    badge.style.display="block";
+    badge.style.display="none";
   }
 }
 
